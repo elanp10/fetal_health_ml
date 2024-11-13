@@ -303,3 +303,27 @@ else:
         # Show the predicted species on the app 
         st.subheader("Predicting Fetal Health Class Using Soft Voting Model")
         st.dataframe(user_df_styled)
+
+        # Showing additional items in tabs
+        st.subheader("Prediction Performance")
+        tab1, tab2, tab3 = st.tabs(["Feature Importance", "Confusion Matrix", "Classification Report"])
+
+
+        # Tab 2: Feature Importance Visualization
+        with tab1:
+            st.write("### Feature Importance")
+            st.image('dt_feature_imp.svg')
+            st.caption("Features used in this prediction are ranked by relative importance.")
+
+        # Tab 3: Confusion Matrix
+        with tab2:
+            st.write("### Confusion Matrix")
+            st.image('dt_confusion_mat.svg')
+            st.caption("Confusion Matrix of model predictions.")
+
+        # Tab 4: Classification Report
+        with tab3:
+            st.write("### Classification Report")
+            report_df = pd.read_csv('dt_class_report.csv', index_col = 0).transpose()
+            st.dataframe(report_df.style.background_gradient(cmap='RdBu').format(precision=2))
+            st.caption("Classification Report: Precision, Recall, F1-Score, and Support for each.")

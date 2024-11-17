@@ -10,7 +10,7 @@ warnings.filterwarnings("ignore")
 # Title and description of the app
 st.title('Fetal Health Classification: A Machine Learning App') 
 # Display gif
-st.image('fetal_health_image.gif', width = True)
+st.image('fetal_health_image.gif', width = 600)
 
 st.write("Utalize the advanced machine learning application to predict fetal health classification.")
 

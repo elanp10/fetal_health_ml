@@ -112,7 +112,6 @@ else:
             if val == 'Normal': color = 'lime' 
             elif val == 'Suspect': color = 'yellow' 
             elif val == 'Pathological': color = 'orange' 
-            else: color = '' 
             return f'background-color: {color}'
         
         # Applying color to the dataframe 
@@ -175,7 +174,6 @@ else:
             if val == 'Normal': color = 'lime' 
             elif val == 'Suspect': color = 'yellow' 
             elif val == 'Pathological': color = 'orange' 
-            else: color = '' 
             return f'background-color: {color}'
         
         # Applying color to the dataframe 
@@ -233,7 +231,6 @@ else:
             if val == 'Normal': color = 'lime' 
             elif val == 'Suspect': color = 'yellow' 
             elif val == 'Pathological': color = 'orange' 
-            else: color = '' 
             return f'background-color: {color}'
         
         # Applying color to the dataframe 
@@ -290,7 +287,6 @@ else:
             if val == 'Normal': color = 'lime' 
             elif val == 'Suspect': color = 'yellow' 
             elif val == 'Pathological': color = 'orange' 
-            else: color = '' 
             return f'background-color: {color}'
         
         # Applying color to the dataframe 

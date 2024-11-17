@@ -184,7 +184,6 @@ else:
         st.subheader("Predicting Fetal Health Class Using Random Forest Model")
         st.dataframe(user_df_styled)
 
-        #### Tabs Are Correct ####
         # Showing additional items in tabs
         st.subheader("Prediction Performance")
         tab1, tab2, tab3 = st.tabs(["Feature Importance", "Confusion Matrix", "Classification Report"])

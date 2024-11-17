@@ -152,8 +152,6 @@ else:
             st.dataframe(report_df.style.background_gradient(cmap='RdBu').format(precision=2))
             st.caption("Classification Report: Precision, Recall, F1-Score, and Support for each.")
     
-
-    ##### WIP #####
     elif model == 'Random Forest':
         st.sidebar.success('You selected Random Forest')
         # Using predict() with new data provided by the user
@@ -250,7 +248,6 @@ else:
         st.subheader("Prediction Performance")
         tab1, tab2, tab3 = st.tabs(["Feature Importance", "Confusion Matrix", "Classification Report"])
 
-
         # Tab 2: Feature Importance Visualization
         with tab1:
             st.write("### Feature Importance")
@@ -307,7 +304,6 @@ else:
         # Showing additional items in tabs
         st.subheader("Prediction Performance")
         tab1, tab2, tab3 = st.tabs(["Feature Importance", "Confusion Matrix", "Classification Report"])
-
 
         # Tab 2: Feature Importance Visualization
         with tab1:
